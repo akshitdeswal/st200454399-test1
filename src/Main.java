@@ -70,7 +70,7 @@ public class Main {
         System.out.println("pet age should be 10-> "+pet.getAge());
 
         System.out.println("\n-----Question 2.6-------");
-        pet.setColor("yellow");
+        pet.setColour("yellow");
         System.out.println("pet colour should be yellow-> "+pet.getColour());
 
         System.out.println("\n-----Question 2.7-------");
