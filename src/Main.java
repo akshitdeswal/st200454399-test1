@@ -14,7 +14,7 @@ public class Main {
         System.out.println("name: "+pet.getName());
         System.out.println("type: "+pet.getType());
         System.out.println("age: "+pet.getAge());
-        System.out.println("colour: "+pet.getColor());
+        System.out.println("colour: "+pet.getColour());
 
         //testing invalid inputs
         try{
@@ -71,7 +71,7 @@ public class Main {
 
         System.out.println("\n-----Question 2.6-------");
         pet.setColor("yellow");
-        System.out.println("pet colour should be yellow-> "+pet.getColor());
+        System.out.println("pet colour should be yellow-> "+pet.getColour());
 
         System.out.println("\n-----Question 2.7-------");
         System.out.println("cat should sound like meow meow-> "+pet.speak());

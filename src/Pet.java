@@ -5,13 +5,13 @@ public class Pet {
     private String name;
     private String type;
     private int age;
-    private String color;
+    private String colour;
 
-    public Pet(String name,String type,int age, String color){
+    public Pet(String name,String type,int age, String colour){
         setName(name);
         setType(type);
         setAge(age);
-        setColor(color);
+        setColor(colour);
     }
 
     public String getName(){
@@ -26,8 +26,8 @@ public class Pet {
         return age;
     }
 
-    public String getColor() {
-        return color;
+    public String getColour() {
+        return colour;
     }
 
     public void setName(String name) {
@@ -52,12 +52,12 @@ public class Pet {
             throw new IllegalArgumentException(age+" is not a valid input, please select age between 0-60 years");
     }
 
-    public void setColor(String color) {
+    public void setColor(String colour) {
         List<String> validColors = Arrays.asList("yellow", "brown", "black", "blue", "red", "white", "grey");
-        if(validColors.contains(color))
-            this.color = color;
+        if(validColors.contains(colour))
+            this.colour = colour;
         else
-            throw new IllegalArgumentException(color+ "is not valid, please chooe from: "+validColors);
+            throw new IllegalArgumentException(colour+ "is not valid, please chooe from: "+validColors);
     }
 
     public String speak(){
@@ -109,7 +109,7 @@ public class Pet {
 //    “[name] is a [age] year old [colour][type]”
 
     public String toString(){
-        return name+ "is a "+ age + "year old" + color + type;
+        return name+ "is a "+ age + "year old" + colour + type;
     }
 
 }
