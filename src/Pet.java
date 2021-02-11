@@ -11,7 +11,7 @@ public class Pet {
         setName(name);
         setType(type);
         setAge(age);
-        setColor(colour);
+        setColour(colour);
     }
 
     public String getName(){
@@ -52,7 +52,7 @@ public class Pet {
             throw new IllegalArgumentException(age+" is not a valid input, please select age between 0-60 years");
     }
 
-    public void setColor(String colour) {
+    public void setColour(String colour) {
         List<String> validColors = Arrays.asList("yellow", "brown", "black", "blue", "red", "white", "grey");
         if(validColors.contains(colour))
             this.colour = colour;
