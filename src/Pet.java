@@ -76,5 +76,40 @@ public class Pet {
         return petTalk;
     }
 
-    
+    public String movesBy(){
+        String petMoves = new String();
+        if(type.equals("dog"))
+            petMoves = "walks or runs";
+        else if(type.equals("cat"))
+            petMoves ="walks or runs";
+        else if(type.equals("bird"))
+            petMoves = "flies";
+        else if(type.equals("reptile"))
+            petMoves = "slither or walk";
+        else if(type.equals("fish"))
+            petMoves = "swim";
+
+        return petMoves;
+    }
+    public static boolean hasfur;
+    public boolean hasFur(){
+        if(type.equals("dog"))
+            hasfur = true;
+        else if(type.equals("cat"))
+            hasfur =true;
+        else if(type.equals("bird"))
+            hasfur =false;
+        else if(type.equals("reptile"))
+            hasfur = false;
+        else if(type.equals("fish"))
+            hasfur =false;
+        return hasfur;
+    }
+
+//    “[name] is a [age] year old [colour][type]”
+
+    public String toString(){
+        return name+ "is a "+ age + "year old" + color + type;
+    }
+
 }
