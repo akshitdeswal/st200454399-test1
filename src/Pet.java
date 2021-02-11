@@ -51,4 +51,30 @@ public class Pet {
         else
             throw new IllegalArgumentException(age+" is not a valid input, please select age between 0-60 years");
     }
+
+    public void setColor(String color) {
+        List<String> validColors = Arrays.asList("yellow", "brown", "black", "blue", "red", "white", "grey");
+        if(validColors.contains(color))
+            this.color = color;
+        else
+            throw new IllegalArgumentException(color+ "is not valid, please chooe from: "+validColors);
+    }
+
+    public String speak(){
+        String petTalk = new String();
+        if(type.equals("dog"))
+            petTalk = "woof woof";
+        else if(type.equals("cat"))
+            petTalk ="meow meow";
+        else if(type.equals("bird"))
+            petTalk = "chirp chirp";
+        else if(type.equals("reptile"))
+            petTalk = "hiss";
+        else if(type.equals("fish"))
+            petTalk = "swimming sound";
+
+        return petTalk;
+    }
+
+    
 }
